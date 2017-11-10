@@ -13,4 +13,5 @@ crontab mycron
 rm mycron
 sudo rm /etc/wpa_supplicant/wpa_supplicant.conf
 sudo cp /home/pi/piSignagePro/rs232/wpa_supplicant.conf /etc/wpa_supplicant/wpa_supplicant.conf
+sed -i -e 's/.*"config_server".*/    "config_server": "englassmedya.com",/g'   -e 's/.*"media_server".*/    "media_server":   "englassmedya.com",/g'  /home/pi/piSignagePro/package.json
 echo "********Islem Tamamlandi.**********"
